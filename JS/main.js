@@ -1,29 +1,29 @@
 
 var cards = [
-{
-rank: 'queen',
-suit: 'hearts',
-cardImage: 'images/queen-of-hearts.png'
-},
+	{
+		rank: 'queen',
+		suit: 'hearts',
+		cardImage: 'images/queen-of-hearts.png'
+	},
 
-{
-rank: 'queen',
-suit: 'diamonds',
-cardImage: 'images/queen-of-diamonds.png'
-},
+	{
+		rank: 'queen',
+		suit: 'diamonds',
+		cardImage: 'images/queen-of-diamonds.png'
+	},
 
-{
-rank: 'king',
-suit: 'hearts',
-cardImage: 'images/king-of-hearts.png'
+	{
+		rank: 'king',
+		suit: 'hearts',
+		cardImage: 'images/king-of-hearts.png'
 
-},
+	},
 
-{
-rank: 'king',
-suit: 'diamonds',
-cardImage: 'images/king-of-diamonds.png'
-},
+	{	
+		rank: 'king',
+		suit: 'diamonds',
+		cardImage: 'images/king-of-diamonds.png'
+	},
 
 ];
 
@@ -59,11 +59,12 @@ var checkForMatch = function(){
 
 
 
-var flipCard = function(cardId) {
+var flipCard = function() {
 
 //this step//
-this.getAttribute('data-id');
- var rank = console.log("user flipped" + cards[cardId].rank);
+var cardId = this.getAttribute('data-id');
+console.log("this is the id of the card" + " " + cardId);
+console.log("user flipped" + " " + cards[cardId].rank);
 cardsInPlay.push("cards[cardId].rank");
 document.getElementByTagName('img')[0].setAttribute('src', (cards[cardId].cardImage));
 
